@@ -9,16 +9,21 @@
 int main(void)
 {
 	int a;
+	int b;
 
-	a = 0;
-	while (a <= 98)
+	for (a = 48; a <= 57; a++)
 	{
-		putchar((a % 10) + '0');
-		putchar(',');
-		putchar(' ');
-		a++;
-	}
-	if (a == 99)
 		putchar(a);
+		for (b = 48; b <= 57; b++)
+		{
+			putchar(b);
+			if (b != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }
