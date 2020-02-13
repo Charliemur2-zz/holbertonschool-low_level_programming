@@ -10,7 +10,7 @@ int main(void)
 	int n;
 
 	n = 1;
-	while (n <= 99)
+	while (n <= 100)
 	{
 		if (n % 15 == 0)
 		{
