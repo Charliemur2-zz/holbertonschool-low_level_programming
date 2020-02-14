@@ -12,7 +12,11 @@ int main(void)
 	n = 1;
 	while (n <= 100)
 	{
-		if (n % 15 == 0)
+		if (n == 100)
+		{
+			printf("Buzz");
+		}
+		else if (n % 15 == 0)
 		{
 			printf("FizzBuzz ");
 		}
@@ -30,5 +34,6 @@ int main(void)
 		}
 		n++;
 	}
+	printf("\n");
 	return (0);
 }
