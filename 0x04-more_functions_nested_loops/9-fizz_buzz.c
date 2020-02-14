@@ -26,7 +26,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%dn ", n);
+			printf("%d ", n);
 		}
 		n++;
 	}
