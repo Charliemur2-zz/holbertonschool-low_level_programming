@@ -7,10 +7,16 @@
 
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int cas;
+
+	cas = 0;
+	while (str[cas] != '\0')
 	{
-		_putchar(*str);
-		str = str + 2;
+		if (cas % 2 == 0)
+		{
+		_putchar(str[cas]);
+		}
+		cas++;
 	}
 	_putchar('\n');
 }
