@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strncpy - copy a string in other
+ * _strcpy - copy a string in other
  * @dest: destination string
  * @src: source string
  * Return: destination string
