@@ -15,7 +15,8 @@ unsigned int _strspn(char *s, char *accept)
 
 	n = 0;
 	i = 0;
-	while (s[i] >= 'a' && s[i] <= 'z')
+	while ((s[i] >= 'a' && s[i] <= 'z') ||
+	       (s[i] >= 'A' && s[i] <= 'Z'))
 	{
 		j = 0;
 		while (accept[j] != '\0')
