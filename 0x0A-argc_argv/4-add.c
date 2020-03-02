@@ -14,15 +14,16 @@ int main(int argc, char *argv[])
 	int j;
 	int sum;
 
-	if (argc < 1)
+	if (argc == 1)
 	{
 		printf("%d\n", 0);
+		return (0);
 	}
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] < 0 || argv[i][j] > 9)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
