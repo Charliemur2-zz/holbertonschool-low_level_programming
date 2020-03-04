@@ -27,9 +27,11 @@ int **alloc_grid(int width, int height)
 				p[i][j] = 0;
 			}
 		}
+		free(p[i]);
 	}
 	else
 	{
+		free(p);
 		return (NULL);
 	}
 	return (p);
