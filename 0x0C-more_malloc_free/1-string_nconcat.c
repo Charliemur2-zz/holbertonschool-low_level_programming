@@ -40,9 +40,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 		{
 			while (k < n)
-			{
 				p[j] = s2[k], k++, j++;
-			}
+			p[lengp + 1] = '\0';
 		}
 	}
 	else
