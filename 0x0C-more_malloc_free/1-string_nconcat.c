@@ -5,7 +5,7 @@
  * string_nconcat - concatenate tow strings
  * @s1: string one
  * @s2: string tow
- * @n: number of s2 to copy
+ * @n: number
  * Return: NULL or p
  */
 
@@ -23,25 +23,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		leng1++, i++;
 	i = 0;
 	while (s2[i] != '\0')
-		leng2++, i++;
+	{
+		leng2++;
+		i++;
+	}
+	if (n > leng2)
+		n = leng2;
 	lengp = leng1 + n;
 	p = malloc(sizeof(char) * (lengp + 1));
-	if (p == '\0')
-		return (NULL);
-	j = 0;
-	while (j < leng1)
-		p[j] = s1[j], j++;
-	if (n >= leng2)
+	if (p != '\0')
 	{
-		while (k < leng2)
-			p[j] = s2[k], j++, k++;
+		j = 0;
+		while (j < leng1)
+		{
+			p[j] = s1[j];
+			j++;
+		}
+		while (k < n)
+		{
+			p[j] = s2[k];
+			k++;
+			j++;
+		}
 		p[lengp + 1] = '\0';
 	}
 	else
-	{
-		while (k < n)
-			p[j] = s2[k], k++, j++;
-		p[lengp + 1] = '\0';
-	}
+		return (NULL);
 	return (p);
 }
