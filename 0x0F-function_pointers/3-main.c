@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 	operator = argv[2];
-	if ((*operator == '/' || *operator == '%') && argv[3] == 0)
+	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
 	calc = get_op_func(argv[2])(num1, num2);
 	printf("%d\n", calc);
 	return (0);
