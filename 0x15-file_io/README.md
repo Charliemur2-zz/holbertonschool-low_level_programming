@@ -1,6 +1,6 @@
 # **0x15. C - File I/O**
 
-# **File Descriptor**
+## **File Descriptor**
 n Unix and related computer operating systems, a file descriptor (FD, less frequently fildes) is an abstract indicator (handle) used to access a file or other input/output resource, such as a pipe or network socket. File descriptors form part of the POSIX application programming interface. A file descriptor is a non-negative integer, generally represented in the C programming language as the type int (negative values being reserved to indicate "no value" or an error condition).
 
 
@@ -11,7 +11,7 @@ n Unix and related computer operating systems, a file descriptor (FD, less frequ
 |2	|Standard error	 |   STDERR_FILENO	|stderr|
 
 
-# **Objetives**
+## **Objetives**
 
 -Look for the right source of information online
 -How to create, open, close, read and write files
@@ -23,13 +23,13 @@ n Unix and related computer operating systems, a file descriptor (FD, less frequ
 -What is a system call
 -What is the difference between a function and a system call
 
-# TASKS 0
+### TASK 0
 Write a function that reads a text file and prints it to the POSIX standard output.
-# TASKS 1
+### TASK 1
 Create a function that creates a file.
-#TASK 2
+### TASK 2
 Write a function that appends text at the end of a file.
-# TASK 3
+### TASK 3
 Write a program that copies the content of a file to another file.
 
 And 1 advanced task
