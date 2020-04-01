@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	cl2 = close(fdo2);
 	if ((cl == -1) || (cl2 == -1))
 	{
-		dprintf(2, "Error: Can't close fd %i\n", cl);
+		dprintf(2, "Error: Can't close fd %s\n", argv[1]);
 		exit(100);
 	}
 	return (0);
