@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 	{
 		if (write(fdo2, arr, fdr) != fdr)
 		{
-			dprintf(STDERR_FILENO, "%s %s\n",e2, argv[2]);
+			dprintf(STDERR_FILENO, "%s %s\n", e2, argv[2]);
 			exit(98);
 		}
 	}
