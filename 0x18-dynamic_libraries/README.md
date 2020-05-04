@@ -1,4 +1,4 @@
-<img src="">
+<img src="https://sesamenotes.files.wordpress.com/2015/03/screen-shot-2015-03-28-at-1-47-03-pm.png" width="80%">
 
 # 0x18. C - Dynamic libraries
 
