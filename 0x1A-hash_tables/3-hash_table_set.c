@@ -6,7 +6,7 @@
  * @ht: hash table
  * @key: They key
  * @value: Value to add
- * @Return: 1 if it succeeded, 0 otherwise.
+ * Return: 1 if it succeeded, 0 otherwise.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *ht_node, *ht_ptr;
 
 	if (!ht || !key || !value || strlen(key) == 0)
-		return(0);
+		return (0);
 	index = key_index((unsigned char *) key, ht->size);
 	ht_ptr = (ht->array)[index];
 	if (ht_ptr != NULL)
@@ -28,10 +28,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			ht_node = malloc(sizeof(hash_node_t));
 			if (ht_node == NULL)
-			{
-				free(ht_node);
 				return (0);
-			}
 			ht_node->key = strdup(key);
 			ht_node->value = strdup(value);
 			ht_node->next = NULL;
@@ -43,10 +40,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		ht_node = malloc(sizeof(hash_node_t));
 		if (ht_node == NULL)
-		{
-			free(ht_node);
 			return (0);
-		}
 		ht_node->key = strdup(key);
 		ht_node->value = strdup(value);
 		ht_node->next = NULL;
