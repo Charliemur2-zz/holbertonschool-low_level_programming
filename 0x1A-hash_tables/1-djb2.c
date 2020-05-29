@@ -3,6 +3,7 @@
  * hash_djb2 - hash function to create the index.
  * @str: string for value in hash table
  * number of the index in witch the value is alocated
+ * Return: hash number
  */
 
 unsigned long int hash_djb2(const unsigned char *str)
