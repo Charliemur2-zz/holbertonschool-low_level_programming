@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * linear_search: search a value in given array
+ * linear_search - search a value in given array
  * @array: Given array
  * @size: Lenght of array
  * @value: value to search in array
