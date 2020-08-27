@@ -12,19 +12,20 @@ int binary_search(int *array, size_t size, int value)
 {
 	unsigned int middle, low = 0, hight = (size - 1), i;
 
-	printf("funciom");
 	while (hight >= low)
+	{
 		middle = ((hight + low) / 2);
 		printf("Searching in array: ");
 		i = low;
-		while (i < hight)
+		while (i <= hight)
 		{
-			if (i == hight - 1)
+			if (i == hight)
 				printf("%d", array[i]);
 			else
 				printf("%d, ", array[i]);
 			i++;
 		}
+		printf("\n");
 		if (value == array[middle])
 		{
 			return (middle);
@@ -37,5 +38,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			low = middle + 1;
 		}
+	}
 	return (-1);
 }
